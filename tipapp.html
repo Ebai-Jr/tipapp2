@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tipapp.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tip Calculator</h1>
+        <div class="wrapper">
+            <H3>Bill</H3>
+            <input type="number" id="amount" placeholder="Normal Bill">$
+            <h3>Tip</h3>
+            <select name="Tip" id="services">
+                <option selected disabled hidden>
+                    Select
+                </option>
+                <option value="0.25">25% - Execelent</option>
+                <option value="0.20">20% - Very Good</option>
+                <option value="0.15">15% - Good</option>
+                <option value="0.10">10% - Okay</option>
+                <option value="0.05">5% - Not Bad</option>
+            </select>
+            <H3>Custom</H3>
+            <input type="number" id="custom" placeholder="How much would you like to tip?">%
+            <h3>Total number of persons</h3>
+            <input type="number" id="persons" placeholder="Number of people sharing the bill">#
+            <button id="calculate">Calculate</button>
+        </div>
+
+        <div class="output">
+
+            <div class="totaltip">
+                <H3>Total Tip</H3>
+                <span id="totaltip">0</span>$
+            </div>
+            <div class="tip">
+                <H3>Tip Amount</H3>
+                <span id="total">0</span>$
+                <span id="each">each</span>
+            </div>
+            <div class="totalbill">
+                <H3>Total Bill</H3>
+                <span id="totalbill">0</span>$
+            </div>
+            <div class="billperperson">
+                <H3>Bill Per Person</H3>
+                <span id="billperperson">0</span>$
+            </div>
+        </div>
+    </div>
+    <script src="tipapp.js"></script>
+</body>
+
+</html>
